@@ -2,8 +2,8 @@ import Energy from '../Energy';
 
 interface Fighter {
   lifePoints: number;
-  strength: number;
-  defense: number;
+  readonly strength: number;
+  readonly defense: number;
   energy?: Energy
 
   attack(enemy: Fighter): void;

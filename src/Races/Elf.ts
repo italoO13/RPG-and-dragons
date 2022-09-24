@@ -3,7 +3,7 @@ import Race from './Race';
 class Elf extends Race {
   static _createdRacesInstances = 0;
 
-  public _maxLifePoinsts = 0;
+  public _maxLifePoinsts: number;
   constructor(name:string, dexterity:number) {
     super(name, dexterity);
     this._maxLifePoinsts = 99;
